@@ -21,16 +21,16 @@ public class ShoppingCart {
     public ShoppingCart() {//random input data
         Thing[] things = new Thing[10];
 
-        things[0] = new Thing("orange",new BigDecimal(10), Categories.category.food);
-        things[1] = new Thing("apple",new BigDecimal(10.80),Categories.category.food);
-        things[2] = new Thing("jacket",new BigDecimal(2200.99),Categories.category.clothes);
-        things[3] = new Thing("aspirin",new BigDecimal(80),Categories.category.medicament);
-        things[4] = new Thing("chocolate",new BigDecimal(20.55),Categories.category.food);
-        things[5] = new Thing("broad",new BigDecimal(8.30),Categories.category.food);
-        things[6] = new Thing("burger",new BigDecimal(15.05),Categories.category.food);
-        things[7] = new Thing("sausage",new BigDecimal(10.20),Categories.category.food);
-        things[8] = new Thing("paracetamol",new BigDecimal(75.31),Categories.category.medicament);
-        things[9] = new Thing("analgene",new BigDecimal(120),Categories.category.medicament);
+        things[0] = new Thing("Orange",new BigDecimal(10), Categories.category.food);
+        things[1] = new Thing("Apple",new BigDecimal(10.80),Categories.category.food);
+        things[2] = new Thing("Jacket",new BigDecimal(2200.99),Categories.category.clothes);
+        things[3] = new Thing("Aspirin",new BigDecimal(80),Categories.category.medicament);
+        things[4] = new Thing("Chocolate",new BigDecimal(20.55),Categories.category.food);
+        things[5] = new Thing("Broad",new BigDecimal(8.30),Categories.category.food);
+        things[6] = new Thing("Burger",new BigDecimal(15.05),Categories.category.food);
+        things[7] = new Thing("Shirt",new BigDecimal(300),Categories.category.clothes);
+        things[8] = new Thing("Paracetamol",new BigDecimal(75.31),Categories.category.medicament);
+        things[9] = new Thing("Analgene",new BigDecimal(120),Categories.category.medicament);
 
         Random random = new Random();
 
