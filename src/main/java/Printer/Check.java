@@ -1,6 +1,8 @@
 package Printer;
 
-import Order.*;
+import Order.Basket;
+import Order.Thing;
+
 import java.util.ArrayList;
 
 public class Check {
