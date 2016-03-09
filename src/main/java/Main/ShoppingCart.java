@@ -13,12 +13,12 @@ public class ShoppingCart {
     private Basket basket = new Basket();
     private Calculate calculate = new Calculate();
 
-    public void shoppingCart(ArrayList<Thing> things) {
+    public ShoppingCart(ArrayList<Thing> things) {
         basket = Basket.createBasket(things);
         calculate.applyDiscountAndShares(basket);
     }
 
-    public void shoppingCart() {//random input data
+    public ShoppingCart() {//random input data
         Thing[] things = new Thing[10];
 
         things[0] = new Thing("orange",new BigDecimal(10), Categories.category.food);
