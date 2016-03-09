@@ -1,8 +1,6 @@
 package Main;
 
-import Order.Basket;
-import Order.Categories;
-import Order.Thing;
+import Order.*;
 import Printer.Check;
 import Strategy.Context.Calculate;
 
