@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Check {
     private  ArrayList<DataForCheck> checkData = new ArrayList<DataForCheck>();
 
-    public  void findThinginCheck(Thing thing){//group by name
+    public  void findThingInCheck(Thing thing){//group by name
         boolean k = false;
         for (DataForCheck data: checkData) {
             if(data.thing.getName().equals(thing.getName())) {
@@ -53,7 +53,7 @@ public class Check {
     public Check(Basket basket){
 
         for (Thing thing: basket.getOrderList()) {
-            findThinginCheck(thing);
+            findThingInCheck(thing);
         }
         text.append("---------------------------------------------------");
         text.append("---------------------------------------------------\n");
