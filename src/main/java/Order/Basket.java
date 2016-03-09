@@ -9,8 +9,8 @@ public class Basket {
     private BigDecimal totalDiscountAndSharePrice = new BigDecimal(0.0);
     private BigDecimal totalPrice = new BigDecimal(0.0);
 
-    public static Categories.category promoGiftName;
-    public static Categories.category promoDiscountName;
+    public static Categories.category promoGiftName = Categories.category.clothes;
+    public static Categories.category promoDiscountName = Categories.category.medicament;
 
     private ArrayList<Thing> orderList = new ArrayList<Thing>();
 
@@ -43,8 +43,7 @@ public class Basket {
     }
 
     public static Basket createBasket(ArrayList<Thing> things) {
-        promoGiftName= Categories.category.clothes;
-        promoDiscountName = Categories.category.medicament;
+
         Basket basket = new Basket();
         for (Thing thing: things) {
             basket.addToBasket(thing);
