@@ -40,7 +40,7 @@ public class Calculate {
 
     public void applyDiscountAndShares(Basket basket){
         applyShare(basket);
-        basket.apdateTotalDiscountAndSharePrice();
+        basket.reCountTotalDiscountAndSharePrice();
         applyDiscount(basket);
     }
 }

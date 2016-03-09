@@ -12,7 +12,6 @@ public class Basket {
     public static Categories.category promoGiftName;
     public static Categories.category promoDiscountName;
 
-
     private ArrayList<Thing> orderList = new ArrayList<Thing>();
 
     public void addToBasket(Thing thing){
@@ -20,7 +19,7 @@ public class Basket {
         totalPrice = totalPrice.add(thing.getPriceWithoutDiscountAndShare());
         totalDiscountAndSharePrice = totalPrice;
     }
-    public void apdateTotalDiscountAndSharePrice(){
+    public void reCountTotalDiscountAndSharePrice(){
         totalDiscountAndSharePrice = new BigDecimal(0.0);
         for (Thing thing: orderList) {
             totalDiscountAndSharePrice = totalDiscountAndSharePrice.add(thing.getPriceDiscountAndShare());

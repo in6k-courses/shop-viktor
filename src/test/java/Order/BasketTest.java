@@ -28,7 +28,7 @@ public class BasketTest {
         Thing thingB = new Thing("a", new BigDecimal(19.66), Categories.category.clothes);
 
         Basket basket = new Basket();
-        basket.apdateTotalDiscountAndSharePrice();
+        basket.reCountTotalDiscountAndSharePrice();
         basket.addToBasket(thingA);
         basket.addToBasket(thingB);
 
