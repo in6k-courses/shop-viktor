@@ -40,7 +40,7 @@ public class Check {
                 return value + "\t\t\t\t\t";
             }
         }
-        else if(value>=100000) {
+        else if(value >= 100000) {
             return value + "\t\t";
         }
         else{
@@ -51,8 +51,9 @@ public class Check {
     private  StringBuilder text =
             new StringBuilder(
                     "Category\t\t"
-                    + "Name\t\t"+"Price without share\t\t"
-                    + "Price with share\t"
+                    +"Name\t\t"
+                    +"Price without share\t\t"
+                    +"Price with share\t"
                     +"Num things\t\t"
                     +"Total price\n"
             );
