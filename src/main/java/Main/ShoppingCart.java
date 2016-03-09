@@ -33,7 +33,9 @@ public class ShoppingCart {
         things[7] = new Thing("sausage",new BigDecimal(10.20),Categories.category.food);
         things[8] = new Thing("paracetamol",new BigDecimal(75.31),Categories.category.medicament);
         things[9] = new Thing("analgene",new BigDecimal(120),Categories.category.medicament);
+
         Random random = new Random();
+
         for(int i = 0;i < random.nextInt(100) + 3 ;i++) {
             basket.addToBasket(things[random.nextInt(10)]);
         }

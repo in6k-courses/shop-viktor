@@ -34,21 +34,28 @@ public class Check {
     private String numTab(double value){
         if(value<10000){
             if(value<10){
-                return value+"\t\t\t\t\t\t";
+                return value + "\t\t\t\t\t\t";
             }
             else {
                 return value + "\t\t\t\t\t";
             }
         }
         else if(value>=100000) {
-            return value+"\t\t";
+            return value + "\t\t";
         }
         else{
-            return value+"\t\t";
+            return value + "\t\t";
         }
     }
 
-    private  StringBuilder text = new StringBuilder("Category\t\t"+"Name\t\t"+"Price without share\t\t"+"Price with share\t"+"Num things\t\t"+"Total price\n");
+    private  StringBuilder text =
+            new StringBuilder(
+                    "Category\t\t"
+                    + "Name\t\t"+"Price without share\t\t"
+                    + "Price with share\t"
+                    +"Num things\t\t"
+                    +"Total price\n"
+            );
 
     public Check(Basket basket){
 
@@ -58,21 +65,21 @@ public class Check {
         text.append("---------------------------------------------------");
         text.append("---------------------------------------------------\n");
         for(DataForCheck data: checkData){
-            text    .append(numTab(data.thing.getCategoryName().toString()))
-                    .append(numTab(data.thing.getName()))
-                    .append(numTab(data.thing.getPriceWithoutDiscountAndShare().doubleValue()))
-                    .append(numTab(String.format("%.2f",data.thing.getPriceDiscountAndShare().doubleValue())))
-                    .append(numTab("\tx"+data.numOfThisThing))
-                    .append(String.format("%.2f",data.numOfThisThing*data.thing.getPriceDiscountAndShare().doubleValue()))
+            text    .append( numTab( data.thing.getCategoryName().toString() ) )
+                    .append( numTab( data.thing.getName()))
+                    .append( numTab( data.thing.getPriceWithoutDiscountAndShare().doubleValue() ) )
+                    .append( numTab( String.format("%.2f",data.thing.getPriceDiscountAndShare().doubleValue() ) ) )
+                    .append( numTab( "\tx"+data.numOfThisThing))
+                    .append( String.format( "%.2f",data.numOfThisThing*data.thing.getPriceDiscountAndShare().doubleValue() ) )
                     .append("\n");
         }
         text.append("---------------------------------------------------");
         text.append("---------------------------------------------------\n");
-        text    .append("Total without discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-                .append(String.format("%.2f",basket.getTotalPrice().doubleValue()))
-                .append("\nTotal with discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-                .append(String.format("%.2f",basket.getTotalDiscountAndSharePrice().doubleValue()))
-                .append("\n");
+        text    .append( "Total without discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" )
+                .append( String.format("%.2f",basket.getTotalPrice().doubleValue() ) )
+                .append( "\nTotal with discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" )
+                .append( String.format( "%.2f",basket.getTotalDiscountAndSharePrice().doubleValue() ) )
+                .append( "\n" );
     }
 
     public void print(){
