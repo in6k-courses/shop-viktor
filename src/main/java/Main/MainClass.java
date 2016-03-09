@@ -22,5 +22,6 @@ public class MainClass {
 
         ShoppingCart cart = new ShoppingCart();
         cart.shoppingCart(things);
+        cart.checkOut();
     }
 }
