@@ -17,7 +17,6 @@ public class NewBasketTest {
         Categories.category food = Categories.category.food;
         Categories.category medicament = Categories.category.medicament;
         ArrayList<Thing> things = new ArrayList<Thing>();
-        BigDecimal bigDecimal = new BigDecimal(0);
         things.add(new Thing("broad", new BigDecimal(11), food));
         things.add(new Thing("analgine", new BigDecimal(49), medicament));
         Basket extented = new Basket();
