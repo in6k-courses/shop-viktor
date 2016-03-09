@@ -9,7 +9,7 @@ public class Check {
     public  void findThingInCheck(Thing thing){//group by name
         boolean k = false;
         for (DataForCheck data: checkData) {
-            if(data.thing.getName().equals(thing.getName())) {
+            if(data.thing.getName().equals( thing.getName() )) {
                 data.numOfThisThing++;
                 k = true;
                 break;
@@ -21,7 +21,7 @@ public class Check {
     }
 
     private String numTab(String str){
-        if(str.length()<4) {
+        if(str.length() < 4) {
             return str + "\t\t\t\t";
         }
         else if (str.length() > 7) {
@@ -32,8 +32,8 @@ public class Check {
     }
 
     private String numTab(double value){
-        if(value<10000){
-            if(value<10){
+        if(value < 10000){
+            if(value < 10){
                 return value + "\t\t\t\t\t\t";
             }
             else {
