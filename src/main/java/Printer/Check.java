@@ -57,7 +57,7 @@ public class Check {
                     +"Price without share\t\t"
                     +"Price with share\t"
                     +"Num things\t\t"
-                    +"Total price\n"
+                    +"Total price with share\n"
             );
 
     public Check(Basket basket){
@@ -66,8 +66,8 @@ public class Check {
             findThingInCheck(thing);
         }
 
-        text.append("---------------------------------------------------");
-        text.append("---------------------------------------------------\n");
+        text.append("---------------------------------------------------------");
+        text.append("--------------------------------------------------------\n");
 
         for(DataForCheck data: checkData){
             text    .append( numTab( data.thing.getCategoryName().toString() ) )
@@ -79,8 +79,8 @@ public class Check {
                     .append("\n");
         }
 
-        text.append("---------------------------------------------------");
-        text.append("---------------------------------------------------\n");
+        text.append("---------------------------------------------------------");
+        text.append("---------------------------------------------------------\n");
         text    .append( "Total without discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" )
                 .append( String.format("%.2f",basket.getTotalPrice().doubleValue() ) )
                 .append( "\nTotal with discount and share:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" )

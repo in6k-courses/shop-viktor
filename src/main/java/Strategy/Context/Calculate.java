@@ -26,6 +26,7 @@ public class Calculate {
             Share share;
             if( thing.getCategoryName().equals(Basket.promoGiftName) ){
                 share = new GiftBuyingItemParticularCategory();
+                //Basket.promoGiftName = Categories.category.nothing;
             }
             else if( thing.getCategoryName().equals(Basket.promoDiscountName) ){
                 share = new DiscountOnProduct();
