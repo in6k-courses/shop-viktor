@@ -15,9 +15,10 @@ public class ConstantDiscountTest {
         basket.addToBasket(thingA);
         basket.addToBasket(thingB);
 
+
         Discount discount = new ConstantDiscount();
         discount.ApplyDiscount(basket);
-
+        basket.setTotalDiscountAndSharePrice(basket.getTotalDiscountAndSharePrice().setScale(2, BigDecimal.ROUND_HALF_UP));
         assertEquals(99,basket.getTotalDiscountAndSharePrice().intValue());
 
     }
