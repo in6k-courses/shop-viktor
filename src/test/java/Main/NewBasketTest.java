@@ -25,6 +25,9 @@ public class NewBasketTest {
 
         Basket actual = Basket.createBasket(things);
 
+//        если ты проверяешь, что Basket.createBasket добвляет продукты в корзину
+//        тогда это стоит делать явно, а не через расчет стоимости.
+//        В результате у тебя тест был бы написан понятнее.
         assertEquals(extented.getTotalPrice(),actual.getTotalPrice());
     }
 }

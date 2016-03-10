@@ -17,6 +17,7 @@ public class ConstantDiscountTest {
 
 
         Discount discount = new ConstantDiscount();
+//        тест на скидку не должен работать с реальной корзиной
         discount.ApplyDiscount(basket);
         basket.setTotalDiscountAndSharePrice(basket.getTotalDiscountAndSharePrice().setScale(2, BigDecimal.ROUND_HALF_UP));
         assertEquals(99,basket.getTotalDiscountAndSharePrice().intValue());

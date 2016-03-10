@@ -7,7 +7,8 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-
+// - много дублирования кода в подготовке данных
+// - сдедует испольщовать осмысленные тестовые данные - `a` не этот случай
 public class BasketTest {
 
     @Test
@@ -22,6 +23,7 @@ public class BasketTest {
         assertEquals(20, basket.getTotalPrice().intValue());
     }
 
+//    обращай внимание на правильное написание слов
     @Test
     public void testApdateTotalDiscountAndSharePrice() throws Exception {
         Thing thingA = new Thing("a", new BigDecimal(10.34), Categories.category.clothes);

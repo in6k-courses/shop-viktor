@@ -22,6 +22,8 @@ public class DependenceDiscountTest {
 
         Discount discount = new DependenceDiscount();
         discount.ApplyDiscount(basket);
+//        Не надо усложнять жизнь себе и другим. Если математика не очевидна, как в этом случае,
+//        следует сразу использовать результат а не такие длинные выражения.
         BigDecimal ex = new BigDecimal(100).multiply(new BigDecimal(0.97));
 
         assertEquals(ex,basket.getTotalDiscountAndSharePrice());

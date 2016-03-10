@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 public class Thing {
 
+//   Цена оригинального товара, да и сам товар, не моет меняться после каждого перерасчета.
+//   Для этого следовало создать отдельную сущьность.
     private BigDecimal priceWithoutDiscountAndShare;
     private BigDecimal priceDiscountAndShare;
 

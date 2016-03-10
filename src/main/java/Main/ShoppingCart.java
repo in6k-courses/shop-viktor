@@ -8,6 +8,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Random;
 
+// Cушествование этого класса сбивает с толку. По смылсу это синоним Basket.
+// А по факту выходит, что все что он делает, это создает данные для демонстрации.
+// Это можно было оставить в Main или назвать этот класс иначе.
 public class ShoppingCart {
 
     private Basket basket = new Basket();

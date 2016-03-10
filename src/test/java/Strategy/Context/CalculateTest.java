@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class CalculateTest {
 
+//    не используй цифры в названиях методов только для того, что бы сделать названия разными
     @Test
     public void testApplyDiscountAndShares1() throws Exception {
         Thing thingA = new Thing("a", new BigDecimal(1.34), Categories.category.clothes);
@@ -22,6 +23,8 @@ public class CalculateTest {
 
         assertEquals(21, basket.getTotalPrice().intValue());
     }
+
+//    удаляй закоментированный код
 /*
     @Test
     public void testApplyDiscountAndShares2() throws Exception {

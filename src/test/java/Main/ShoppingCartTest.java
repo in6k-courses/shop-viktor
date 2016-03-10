@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
+// Непонятно какое предназначение этого теста, если Basket протестирован в BasketTest.
 public class ShoppingCartTest {
 
     @Test

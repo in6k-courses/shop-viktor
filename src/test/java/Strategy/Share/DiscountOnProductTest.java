@@ -15,6 +15,7 @@ public class DiscountOnProductTest {
         Thing thingA = new Thing("a", new BigDecimal(50), Categories.category.clothes);
 
         Share share =  new DiscountOnProduct();
+//        нарушен стиль наименования методов
         share.ApplyShare(thingA);
 
         assertEquals(45, thingA.getPriceDiscountAndShare().intValue());
